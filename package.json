@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +12,9 @@
   "author": "Bruno Frontini",
   "license": "GNU",
   "dependencies": {
+    "axios": "^0.27.2",
     "colors": "^1.4.0",
+    "dotenv": "^16.0.2",
     "inquirer": "^9.1.1"
   }
 }
