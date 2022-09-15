@@ -72,12 +72,12 @@ export const readInput = async (message) => {
   return desc;
 };
 
-export const deleteMenu = async (tasks) => {
-  const choices = tasks.map((task, i) => {
+export const optionMenu = async (options) => {
+  const choices = options.map((option, i) => {
     const idx = `${i + 1}.`.magenta;
     return {
-      value: task.id,
-      name: `${idx} ${task.desc}`,
+      value: option.id,
+      name: `${idx} ${option.name}`,
     };
   });
 
@@ -90,7 +90,7 @@ export const deleteMenu = async (tasks) => {
     {
       type: "list",
       name: "id",
-      message: "Delete",
+      message: "Choose your option",
       choices,
     },
   ];
